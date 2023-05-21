@@ -1,0 +1,47 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <Authors>Ben Hendel-Doying</Authors>
+        <Company>Ben Hendel-Doying</Company>
+        <Description>Texture-manipulation extensions for MonoGame.</Description>
+        <Copyright>2023 Ben Hendel-Doying</Copyright>
+        <Version>0.1.0</Version>
+
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <PackageTags>monogame extensions graphics textures colors</PackageTags>
+        <PackageProjectUrl>https://github.com/BenMakesGames/MonoGame.Extensions</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/BenMakesGames/MonoGame.Extensions</RepositoryUrl>
+        <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <PackageIcon>package-icon.png</PackageIcon>
+        <IncludeSymbols>true</IncludeSymbols>
+        <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+
+        <TargetFramework>net7.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <WarningsAsErrors>Nullable</WarningsAsErrors>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Include="..\LICENSE.md">
+            <Pack>True</Pack>
+            <PackagePath />
+        </None>
+        <None Include="..\README.md">
+            <Pack>True</Pack>
+            <PackagePath />
+        </None>
+        <None Include="..\package-icon.png">
+            <Pack>True</Pack>
+            <PackagePath />
+        </None>
+    </ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="MonoGame.Framework.DesktopGL" Version="3.8.1.303" />
+        <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+    </ItemGroup>
+
+</Project>
